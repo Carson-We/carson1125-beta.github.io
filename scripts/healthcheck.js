@@ -1,5 +1,5 @@
 <script>
-    var websiteUrl = "http://carson1125.hk";
+    var websiteUrl = "https://carson-we.github.io/carson1125-beta.github.io/";
 
        function checkWebsiteStatus() {
         var xhr = new XMLHttpRequest();
