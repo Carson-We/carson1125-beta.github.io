@@ -1,5 +1,4 @@
-<script>
-    var websiteUrl = "https://carson-we.github.io/carson1125-beta.github.io/";
+var websiteUrl = "http://carson1125.hk";
 
        function checkWebsiteStatus() {
         var xhr = new XMLHttpRequest();
@@ -25,4 +24,3 @@
     window.addEventListener('load', function () {
         checkWebsiteStatus();
     });
-</script>
