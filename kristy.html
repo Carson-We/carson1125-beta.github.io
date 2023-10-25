@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <meta charset="UTF-8">
+    <title>K.R.I.S.T.Y. | Carson Wu</title>
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        function goToHomePage() {
+            window.location.href = "index.html";
+        }
+
+        function goToCR() {
+            window.location.href = "CR.html";
+        }
+
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        window.addEventListener('DOMContentLoaded', function() {
+            var dropdownButton = document.querySelector('.dropbtn');
+            var dropdownContent = document.querySelector('.dropdown-content');
+
+            var isHovered = false;
+
+            dropdownButton.addEventListener('click', function() {
+                dropdownContent.classList.toggle('active');
+                isHovered = false;
+            });
+            
+            window.addEventListener('click', function(event) {
+                if (!dropdownButton.contains(event.target)) {
+                    dropdownContent.classList.remove('active');
+                    isHovered = false;
+                }
+            });
+        });
+</script>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="index_zh.html">中文</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="index_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+                <li><a href="ws.html" target="_blank">Website Status</a></li>
+            </ul>
+        </nav>  
+    </header>
+       
+        <div class="container">
+            <h1>About</h1>
+            <p>This system, developed using Python, is an intelligent voice assistant designed to assist with test-related tasks. Powered by natural language processing and machine learning capabilities, it can retrieve and infer knowledge from various sources to provide relevant information and support during tests. With its voice-based interface, the system aims to enhance productivity and efficiency in test preparation and execution.</p>
+            <p>Platform: Multi-platform</p>
+            <p>Language: Python</p>
+        </div>
+
+        <div class="container">
+            <h1>Download</h1>
+            <p>All content is intended for personal use only and may not be used for commercial purposes. No content may be used for commercial purposes without the explicit written permission of the copyright owner.</p>
+        </div>
+            <section class="card">
+                <h2>Code</h2>
+                <button class="btn btn1" onclick="window.location.href = '/Download/KRISTY.py'">Download</button>
+            </section>
+
+        <footer style="cursor: pointer;" onclick="goToCR()">
+            <p>Copyright &copy; 2023 Carson. All rights reserved.</p>
+        </footer>
+</body>
+</html>

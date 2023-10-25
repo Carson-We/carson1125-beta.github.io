@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <title>BLOG | Carson Wu</title>
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        function goToHomePage() {
+            window.location.href = "index.html";
+        }
+
+        function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        }
+
+        function goToCR() {
+            window.location.href = "CR.html";
+        }
+
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        window.addEventListener('DOMContentLoaded', function() {
+            var dropdownButton = document.querySelector('.dropbtn');
+            var dropdownContent = document.querySelector('.dropdown-content');
+
+            var isHovered = false;
+
+            dropdownButton.addEventListener('click', function() {
+                dropdownContent.classList.toggle('active');
+                isHovered = false;
+            });
+            
+            window.addEventListener('click', function(event) {
+                if (!dropdownButton.contains(event.target)) {
+                    dropdownContent.classList.remove('active');
+                    isHovered = false;
+                }
+            });
+        });
+</script>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="index_zh.html">中文</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="index_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="Blog.html" target="_blank">Blog</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="project.html" target="_blank">Project</a></li>
+                <li><a href="ws.html" target="_blank">Website Status</a></li>
+            </ul>
+        </nav>  
+    </header>
+<section>
+    <div class="card">
+        <h1>test title 1</h1>
+        <h2>blog content.</h2>
+        <p>Carson Wu</p>
+        <p><span id="current-date"></span></p>
+    </div>
+</section>
+
+<footer style="cursor: pointer;" onclick="goToCR()">
+    <p>Copyright &copy; 2023 Carson. All rights reserved.</p>
+</footer>
+
+<button onclick="scrollToTop()" class="btn btn1">Scroll to Top</button>
+
+<script>
+    var dateTimeElement = document.getElementById('current-date');
+    var now = new Date();
+    var date = now.toLocaleDateString();
+    var time = now.toLocaleTimeString();
+    var dateTime = date + ' ' + time;
+    dateTimeElement.textContent = dateTime;
+</script>
+</body>
+</html> 
