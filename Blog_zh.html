@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/nor_zh.js"></script>
+    <meta charset="UTF-8">
+    <title>BLOG | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="index_zh.html">中文</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="index_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about_zh.html" target="_blank">關於</a></li>
+                <li><a href="Blog_zh.html" target="_blank">部落格</a></li>
+                <li><a href="contact_zh.html" target="_blank">聯絡</a></li>
+                <li><a href="project_zh.html" target="_blank">專案</a></li>
+                <li><a href="ws_zh.html" target="_blank">網站狀態</a></li>
+            </ul>
+        </nav>  
+    </header>
+<section>
+    <div class="card">
+        <h1>test title 1</h1>
+        <h2>blog content.</h2>
+        <p>Carson Wu</p>
+        <p><span id="current-date"></span></p>
+    </div>
+</section>
+
+<footer style="cursor: pointer;" onclick="goToCR()">
+    <p>Copyright &copy; 2023 Carson. All rights reserved.</p>
+</footer>
+
+<button onclick="scrollToTop()" class="btn btn1">Scroll to Top</button>
+
+<script>
+    var dateTimeElement = document.getElementById('current-date');
+    var now = new Date();
+    var date = now.toLocaleDateString();
+    var time = now.toLocaleTimeString();
+    var dateTime = date + ' ' + time;
+    dateTimeElement.textContent = dateTime;
+</script>
+</body>
+</html> 

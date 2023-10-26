@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/healthcheck.js"></script>
+    <script src="scripts/nor.js"></script>
+    <meta charset="UTF-8">
+    <title>WEBSITE STATUS | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="index_zh.html">中文</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="index_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+                <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+                <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+                <li><a href="project_kr.html.html" target="_blank">프로젝트</a></li>
+                <li><a href="ws_kr.html" target="_blank">웹사이트 상태</a></li>
+            </ul>
+        </nav>  
+    </header>
+       
+        <div class="container">
+           <h1>Website Status</h1>
+           <p id="website-status">Server: Loading...</p>
+  <p>If you are experiencing an issue not listed here, contact support: <i><u>carson.developer1125@gmail.com</u></i></p>
+        </div>
+
+        <footer style="cursor: pointer;" onclick="goToCR()">
+            <p>Copyright &copy; 2023 Carson. All rights reserved.</p>
+        </footer>
+</body>
+</html>
