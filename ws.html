@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
     <script src="scripts/healthcheck.js"></script>
+    <script src="scripts/email.js"></script>
     <meta charset="UTF-8">
     <title>ABOUT | Carson Wu</title>
     <script>
@@ -70,11 +71,12 @@
         <div class="container">
            <h1>Website Status</h1>
            <p id="website-status">Server: Loading...</p>
-  <p>If you are experiencing an issue not listed here, contact support: <i><u>carson.developer1125@gmail.com</u></i></p>
+           <p>If you are experiencing an issue not listed here, contact support: <a id="contact-link"><i><u>carson.developer1125@gmail.com</u></i></a></p>
         </div>
 
         <footer style="cursor: pointer;" onclick="goToCR()">
-            <p>Copyright &copy; 2023 Carson. All rights reserved.</p>
+            <p>Copyright &copy; 2023 Carson. All rights reserved. Version: <span id="version"></span></p>
         </footer>
+        <script src="scripts/version.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <script src="scripts/nor_zh.js"></script>
+    <script src="scripts/email.js"></script>
     <meta charset="UTF-8">
 </head>
 <body>
@@ -33,13 +34,14 @@
         </header>
 
     <div class="contact-info">
-        <p>email: <i><u>carson.developer1125@gmail.com</u></i></p>
+        <p id="contact-link" style="cursor: pointer;">email: <i><u>carson.developer1125@gmail.com</u></i></p>
         <p>Instagram: <a href="https://instagram.com/we.carson"><i class="fab fa-instagram"></i></a></p>
         <p>GitHub: <a href="https://github.com/Carson-We"><i class="fab fa-github"></i></a></p>
     </div>
   
     <footer style="cursor: pointer;" onclick="goToCR()">
-        <p>Copyright &copy; 2023 Carson. All rights reserved.</p>
+        <p>Copyright &copy; 2023 Carson. All rights reserved. Version: <span id="version"></span></p>
     </footer>
+    <script src="scripts/version.js"></script>
 </body>
 </html>
