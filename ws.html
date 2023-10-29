@@ -6,42 +6,6 @@
     <script src="scripts/email.js"></script>
     <meta charset="UTF-8">
     <title>ABOUT | Carson Wu</title>
-    <script>
-        window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
-
-        function goToHomePage() {
-            window.location.href = "index.html";
-        }
-
-        function goToCR() {
-            window.location.href = "CR.html";
-        }
-
-        window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
-
-        window.addEventListener('DOMContentLoaded', function() {
-            var dropdownButton = document.querySelector('.dropbtn');
-            var dropdownContent = document.querySelector('.dropdown-content');
-
-            var isHovered = false;
-
-            dropdownButton.addEventListener('click', function() {
-                dropdownContent.classList.toggle('active');
-                isHovered = false;
-            });
-            
-            window.addEventListener('click', function(event) {
-                if (!dropdownButton.contains(event.target)) {
-                    dropdownContent.classList.remove('active');
-                    isHovered = false;
-                }
-            });
-        });
-</script>
 </head>
 <body>
     <header>
@@ -52,9 +16,9 @@
                 <span class="arrow"></span>
             </button>
             <ul class="dropdown-content">
-                <li><a href="index_zh.html">中文</a></li>
-                <li><a href="index.html">English</a></li>
-                <li><a href="index_kr.html">한글</a></li>
+                <li><a href="ws_zh.html">中文</a></li>
+                <li><a href="ws.html">English</a></li>
+                <li><a href="ws_kr.html">한글</a></li>
             </ul>
         </div>
         <nav>
