@@ -1,1 +1,1 @@
-document.getElementById("version").textContent = "0.6.4（064b）";
+document.getElementById("version").textContent = "0.6.5（065301023b）";
