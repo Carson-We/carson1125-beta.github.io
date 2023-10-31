@@ -10,6 +10,10 @@ window.addEventListener('load', function() {
             window.location.href = "CR_kr.html";
         }
 
+        function goToVE() {
+            window.location.href = "ve_kr.html";
+        }
+
         window.addEventListener('load', function() {
             document.body.classList.add('loaded');
         });
