@@ -1,0 +1,1 @@
+document.getElementById("cr").textContent = "Copyright © 2023 Carson 모든 권리 보유.";
