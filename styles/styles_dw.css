@@ -71,6 +71,18 @@ section {
     color: #fff;
 }
 
+h1 {
+    padding-left: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+a {
+    color: #2A64C5;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -176,3 +188,30 @@ footer {
     transform: translateY(-5px);
 }
 
+ul.tree {
+    list-style-type: none;
+    padding-left: 20px;
+}
+ul.tree li {
+    position: relative;
+}
+ul.tree li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    border-left: 1px solid #ccc;
+}
+ul.tree li:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: -10px;
+    border-left: 1px solid #ccc;
+}
+ul.tree li:last-child:before {
+    height: 50%;
+    bottom: auto;
+}

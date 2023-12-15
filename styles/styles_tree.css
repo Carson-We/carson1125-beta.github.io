@@ -176,3 +176,16 @@ footer {
     transform: translateY(-5px);
 }
 
+.file-tree {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .file-tree .folder {
+    font-weight: bold;
+    color: #0366d6;
+  }
+  
+  .file-tree .file {
+    color: #24292e;
+  }

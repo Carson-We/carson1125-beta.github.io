@@ -183,3 +183,28 @@ footer {
 .card:hover {
     transform: translateY(-5px);
 }
+
+file-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-item {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+.file-item .file-name {
+    font-weight: bold;
+    color: #f2f2f2;
+}
