@@ -30,7 +30,13 @@
             </ul>
         </nav>  
     </header>
-       
+    <nav>
+        <ul style="display: flex; justify-content: flex-end;">
+            <h1 style="position: fixed; top: 60px; left: 20px; z-index: 9999; cursor: pointer;">FERD</h1>
+            <li style="margin-left: auto;"><a href="ferd.html" target="_blank">Overall</a></li>
+            <li><a href="ferd-d.html" target="_blank">Download</a></li>
+        </ul>
+    </nav>
         <div class="container">
            <div class="container">
             <h1>About</h1>
@@ -39,27 +45,6 @@
             <p>Platform: macOS(Create ML)</p>
             <p>Language: /</p>
         </div>
-         
-        <div class="container">
-            <h1>Download</h1>
-            <p>All content is intended for personal use only and may not be used for commercial purposes. No content may be used for commercial purposes without the explicit written permission of the copyright owner.</p>
-        </div>
-            <section class="card">
-                <h2>Package</h2>
-                <p>Size: 80.4 MB</p>
-                <button class="btn btn1" onclick="window.location.href = '/Download/FERD/FERD_pa.zip'">Download</button>
-            </section>
-            <section class="card">
-                <h2>Model</h2>
-                <p>Size: 99 KB</p>
-                <button class="btn btn1" onclick="window.location.href = '/Download/FERD/FacialExpressionClassifier_1.mlmodel'">Download</button>
-            </section>
-            <section class="card">
-                <h2>Dataset</h2>
-                <p>Size: 56.6 MB</p>
-                <button class="btn btn1" onclick="window.location.href = '/Download/FERD/Dataset'">Download</button>
-            </section>
-
             <footer>
                 <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
                 <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
