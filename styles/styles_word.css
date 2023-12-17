@@ -208,3 +208,13 @@ file-list {
     font-weight: bold;
     color: #f2f2f2;
 }
+
+#bottom-iframe {
+    position: absolute;
+    top: calc(100% + 20px); 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+  }
