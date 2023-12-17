@@ -189,3 +189,16 @@ footer {
   .file-tree .file {
     color: #24292e;
   }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .menu li {
+      margin-bottom: 10px;
+    }
+  }
+
+

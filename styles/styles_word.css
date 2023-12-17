@@ -218,3 +218,14 @@ file-list {
     border: none;
     overflow: hidden;
   }
+
+  @media (max-width: 768px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .menu li {
+      margin-bottom: 10px;
+    }
+  }
