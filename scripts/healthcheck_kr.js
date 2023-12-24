@@ -1,4 +1,7 @@
-var websiteUrl = "http://carson1125.hk";
+var websiteUrls = [
+    { url: "http://carson1125.hk", label: "website-status" },
+    { url: "http://carson1125.hk/kristy-webui_kr.html", label: "kristy-webui" }
+];
 
        function checkWebsiteStatus() {
         var xhr = new XMLHttpRequest();
@@ -15,12 +18,16 @@ var websiteUrl = "http://carson1125.hk";
         xhr.send();
     }
 
-    function updateWebsiteStatus(status, color) {
-        var statusElement = document.getElementById("website-status");
-        statusElement.textContent = "Server: " + status;
-        statusElement.style.color = color;
+    function updateWebsiteStatus(urlObj, status, color) {
+        var statusElement = document.getElementById(urlObj.label);
+        if (statusElement) {
+            statusElement.textContent = "Server: " + status;
+            statusElement.style.color = color;
+        }
     }
-
+    
     window.addEventListener('load', function () {
-        checkWebsiteStatus();
+        for (var i = 0; i < websiteUrls.length; i++) {
+            checkWebsiteStatus(websiteUrls[i]);
+        }
     });

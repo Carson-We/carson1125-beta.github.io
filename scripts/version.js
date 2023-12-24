@@ -1,1 +1,1 @@
-document.getElementById("version").textContent = "v0.9.3.0（0930171223a）";
+document.getElementById("version").textContent = "v0.9.3.1（0931241223a）";

@@ -1,26 +1,33 @@
-var websiteUrl = "http://carson1125.hk";
+var websiteUrls = [
+    { url: "http://carson1125.hk", label: "website-status" },
+    { url: "http://carson1125.hk/kristy-webui.html", label: "kristy-webui" }
+];
 
-       function checkWebsiteStatus() {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", websiteUrl, true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    updateWebsiteStatus("Normal", "#32CD32");
-                } else {
-                    updateWebsiteStatus("Offline", "#FF0000");
-                }
+function checkWebsiteStatus(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                updateWebsiteStatus(url, "Normal", "#32CD32");
+            } else {
+                updateWebsiteStatus(url, "Offline", "#FF0000");
             }
-        };
-        xhr.send();
-    }
+        }
+    };
+    xhr.send();
+}
 
-    function updateWebsiteStatus(status, color) {
-        var statusElement = document.getElementById("website-status");
+function updateWebsiteStatus(urlObj, status, color) {
+    var statusElement = document.getElementById(urlObj.label);
+    if (statusElement) {
         statusElement.textContent = "Server: " + status;
         statusElement.style.color = color;
     }
+}
 
-    window.addEventListener('load', function () {
-        checkWebsiteStatus();
-    });
+window.addEventListener('load', function () {
+    for (var i = 0; i < websiteUrls.length; i++) {
+        checkWebsiteStatus(websiteUrls[i]);
+    }
+});

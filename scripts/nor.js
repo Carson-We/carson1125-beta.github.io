@@ -1,43 +1,39 @@
 window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
+    document.body.classList.add('loaded');
+});
 
-        function goToHomePage() {
-            window.location.href = "index.html";
+function goToHomePage() {
+    window.location.href = "index.html";
+}
+
+function goToCR() {
+    window.location.href = "CR.html";
+}
+
+function goToVE() {
+    window.location.href = "ve.html";
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+    var dropdownButton = document.querySelector('.dropbtn');
+    var dropdownContent = document.querySelector('.dropdown-content');
+
+    var isHovered = false;
+
+    dropdownButton.addEventListener('click', function() {
+        dropdownContent.classList.toggle('active');
+        isHovered = false;
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!dropdownButton.contains(event.target)) {
+            dropdownContent.classList.remove('active');
+            isHovered = false;
         }
+    });
+});
 
-        function goToCR() {
-            window.location.href = "CR.html";
-        }
-
-        function goToVE() {
-            window.location.href = "ve.html";
-        }
-
-        window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
-
-        window.addEventListener('DOMContentLoaded', function() {
-            var dropdownButton = document.querySelector('.dropbtn');
-            var dropdownContent = document.querySelector('.dropdown-content');
-
-            var isHovered = false;
-
-            dropdownButton.addEventListener('click', function() {
-                dropdownContent.classList.toggle('active');
-                isHovered = false;
-            });
-            
-            window.addEventListener('click', function(event) {
-                if (!dropdownButton.contains(event.target)) {
-                    dropdownContent.classList.remove('active');
-                    isHovered = false;
-                }
-            });
-        });
-
-        function toggleMenu() {
-            var menu = document.querySelector('nav ul');
-            menu.classList.toggle('show');
-        }
+function toggleMenu() {
+    var menu = document.querySelector('nav ul');
+    menu.classList.toggle('show');
+}
