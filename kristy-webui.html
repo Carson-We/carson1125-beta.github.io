@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles_kwui.css">
     <script src="scripts/nor.js"></script>
     <meta charset="UTF-8">
-    <title>K.R.I.S.T.Y. | Carson Wu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.R.I.S.T.Y. Web UI | Carson Wu</title>
 </head>
 <body>
     <header>
@@ -38,15 +39,23 @@
             <li><a href="kristy-webui.html">K.R.I.S.T.Y. WebUI</a></li>
         </ul>
     </nav>
-    <ul>
-        <li><a href="Download/KRISTY.py">Code</a></li>
-      </ul>
-            <footer>
-                <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
-                <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
-            </footer>
-            <script src="scripts/version.js"></script>
-            <script src="scripts/cr_en.js"></script>
-            <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
+    <div class="a">
+        <div><img class="kristy_webui" src="images/kristy_webui.png" alt="a"></div>
+        <div class="centered-content"></div>
+        <svg class="kristy">
+            <text x="0" y="80">K.R.I.S.T.Y.</text>
+        </svg>
+        <div class="centered-text">
+            Embrace the revolution of the next generation digital assistant, shaping the future of digital assistance!
+        </div>
+    </div>
+        
+    <footer class="footer">
+        <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+        <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+    </footer>
+    <script src="scripts/version.js"></script>
+    <script src="scripts/cr_en.js"></script>
+    <iframe id="bottom-iframe" src="sitemap-b.html"></iframe>
 </body>
 </html>
