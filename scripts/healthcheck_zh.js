@@ -1,11 +1,11 @@
-var websiteUrls = [
-    { url: "http://carson1125.hk", label: "website-status" },
-    { url: "http://carson1125.hk/kristy-webui_zh.html", label: "kristy-webui" }
-];
-
-       function checkWebsiteStatus() {
+    var websiteUrls = [
+        { url: "http://carson1125.hk", label: "website-status" },
+        { url: "http://carson1125.hk/kristy-webui.html", label: "kristy-webui" }
+    ];
+    
+    function checkWebsiteStatus(url) {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", websiteUrl, true);
+        xhr.open("GET", url, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
@@ -17,7 +17,7 @@ var websiteUrls = [
         };
         xhr.send();
     }
-
+    
     function updateWebsiteStatus(urlObj, status, color) {
         var statusElement = document.getElementById(urlObj.label);
         if (statusElement) {
