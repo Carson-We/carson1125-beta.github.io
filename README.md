@@ -1,19 +1,19 @@
-# Carson1125.hk 預計日程
+# Carson1125.hk Scheduled Events
 
-*香港，2023年12月25日* - Carson1125.hk，Carson Wu的個人網站，宣佈了其預計日程。這個網站將為用戶提供關於Carson Wu的相關信息和內容。
+*Hong Kong, December 25, 2023* - Carson1125.hk, the personal website of Carson Wu, announces its scheduled events. This website aims to provide users with information and content related to Carson Wu.
 
-以下是Carson1125.hk的預計日程：
+Here is the schedule for Carson1125.hk:
 
-- **1月15日：開始公測階段（Beta）**
-  在這一階段，Carson1125.hk將開始進行公測，讓用戶測試網站的功能和內容。用戶將能夠瀏覽Carson Wu的個人信息和相關內容，並提供反饋和建議。
+- **January 15th: Beta Testing Phase Begins**
+  During this phase, Carson1125.hk will start its beta testing, allowing users to test the website's features and content. Users will be able to browse Carson Wu's personal information and related content, providing feedback and suggestions.
 
-- **1月25日：進入最終測試版本（Released candidate）**
-  在這個階段，Carson1125.hk將進入最終測試版本。網站將經過更多測試和優化，以確保用戶能夠獲得流暢和良好的瀏覽體驗。
+- **January 25th: Entering the Released Candidate Testing Version**
+  At this stage, Carson1125.hk will enter the released candidate testing version. The website will undergo further testing and optimization to ensure users have a smooth and enjoyable browsing experience.
 
-- **1月29日：正式推出完成版（Release）**
-  1月29日，Carson1125.hk將正式推出完成版。用戶將能夠完整地瀏覽和探索Carson Wu的個人網站，並瞭解更多關於他的信息和事業。
+- **January 29th: Official Release**
+  On January 29th, Carson1125.hk will be officially released. Users will have full access to browse and explore Carson Wu's personal website, learning more about him and his endeavors.
 
-- **2月1日：正式開幕**
-  2月1日，Carson1125.hk將正式開幕。這個網站將成為用戶獲取關於Carson Wu的最新信息和動態的主要平台。
+- **February 1st: Grand Opening**
+  On February 1st, Carson1125.hk will have its grand opening. This website will serve as the main platform for users to access the latest information and updates about Carson Wu.
 
-Carson Wu期待著與用戶分享他的故事和成果，並提供有價值的內容和資源。用戶可以訪問[Carson1125.hk](http://carson1125.hk)以獲取更多信息並參與預計日程中的活動。
+Carson Wu looks forward to sharing his story and accomplishments with users, providing valuable content and resources. Users can visit [Carson1125.hk](http://carson1125.hk) for more information and participate in the scheduled events.
