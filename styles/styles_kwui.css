@@ -136,6 +136,10 @@
         p {
             margin-left: 10px;
         }
+
+        .b {
+            color: #f9af03;
+        }
         
         footer {
             background-color: #333;
@@ -276,6 +280,8 @@
             border: none;
             overflow: hidden;
           }
+
+
         
           @media (max-width: 768px) {
             .menu {
