@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
+    <script src="scripts/nor_kr.js"></script>
+    <meta charset="UTF-8">
+    <title>LICENSE | Carson Wu</title>
+</head>
+<body>
+    <header>
+        <h1 style="position: fixed; top: 5px; left: 20px; z-index: 9999; cursor: pointer;" onclick="goToHomePage()">Carson Wu</h1>
+        <div class="dropdown">
+            <button class="dropdown-btn btn dropbtn">
+                <span>Translate button</span>
+                <span class="arrow"></span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="li_zh.html">中文</a></li>
+              <li><a href="li.html">English</a></li>
+              <li><a href="li_kr.html">한글</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <button style="display: flex; justify-content: center; position: absolute; top: 20px; left: 30%; max-width: 20px; cursor: pointer;" class="dropdown-btn1 btn1 dropbtn1 menu-icon">
+              <span>&#9776;</span>
+              <span class="arrow"></span>
+          </button>
+          <ul style="top: 45px; left: 29%; " class="dropdown-content1">
+              <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+              <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+              <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+              <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+          </ul>
+      </div>
+      <nav>
+          <ul class="menu">
+              <li><a href="about_kr.html" target="_blank">나에 대해서</a></li>
+              <li><a href="Blog_kr.html" target="_blank">블로그</a></li>
+              <li><a href="contact_kr.html" target="_blank">나에게 연락</a></li>
+              <li><a href="project_kr.html" target="_blank">프로젝트</a></li>
+          </ul>
+        </nav>
+    </header> 
+    <div class="container">
+      <p>본 웹사이트의 모든 콘텐츠와 구성 요소는 Mozilla 공중 특허권(Mozilla Public License)에 따라 라이선스가 부여됩니다.</p>
+      <h3>Mozilla 공중 특허권에 대하여</h3>
+      <p>Mozilla 공중 특허권(MPL)은 Mozilla 재단에서 개발한 자유이자 오픈 소스 소프트웨어 라이선스입니다. 이는 특정 조건 하에서 라이선스 소프트웨어의 사용, 수정 및 배포를 허용하는 관용적인 라이선스입니다.</p>
+      <p>Mozilla 공중 특허권에 대한 자세한 정보는 <a href="https://www.mozilla.org/MPL/" target="_blank">공식 MPL 웹사이트</a>를 참조하십시오.</p>
+    </div>
+        <footer>
+          <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
+          <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
+      </footer>
+      <script src="scripts/version.js"></script>
+      <script src="scripts/cr_kr.js"></script>
+      <iframe id="bottom-iframe" src="sitemap-b_kr.html"></iframe>
+</body>
+</html>
