@@ -1,6 +1,7 @@
 var websiteUrls = [
     { url: "http://carson1125.hk", label: "website-status" },
-    { url: "http://carson1125.hk/kristy-webui.html", label: "kristy-webui" }
+    { url: "http://carson1125.hk/kristy-webui.html", label: "kristy-webui" },
+    { url: "https://carson-we.github.io/carson1125-beta.github.io/", label: "github-pages" }
 ];
 
 function checkWebsiteStatus(url) {
@@ -21,7 +22,7 @@ function checkWebsiteStatus(url) {
 function updateWebsiteStatus(urlObj, status, color) {
     var statusElement = document.getElementById(urlObj.label);
     if (statusElement) {
-        statusElement.textContent = "Server: " + status;
+        statusElement.textContent = status;
         statusElement.style.color = color;
     }
 }

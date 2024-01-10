@@ -1,6 +1,7 @@
 var websiteUrls = [
     { url: "http://carson1125.hk", label: "website-status" },
-    { url: "http://carson1125.hk/kristy-webui_kr.html", label: "kristy-webui" }
+    { url: "http://carson1125.hk/kristy-webui_kr.html", label: "kristy-webui" },
+    { url: "https://carson-we.github.io/carson1125-beta.github.io/", label: "github-pages" }
 ];
 
        function checkWebsiteStatus() {

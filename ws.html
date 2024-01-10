@@ -2,7 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles/styles_word.css">
-    <script src="scripts/healthcheck.js"></script>
     <script src="scripts/nor.js"></script>
     <meta charset="UTF-8">
     <title>WEBSITE STATUS | Carson Wu</title>
@@ -42,15 +41,15 @@
             </ul>
           </nav>
     </header>
-       
         <div class="container">
            <h1>Website Status</h1>
-           <div id="website-status">Server: Loading...</div>
-           <p id="kristy-webui">Server: Loading...</p>
+           <p>Website Server: <span id="website-status">Loading...</span></p>
+           <p>K.R.I.S.T.Y. WebUI Server: <span id="kristy-webui">Loading...</span></p>
+           <p>GitHub Pages Server: <span id="github-pages"></span></p>
            <p>Last updated: <span id="current-date"></span></p>
            <p>If you are experiencing an issue not listed here, contact support: <span id="contact-link" style="cursor: pointer; display: inline;"><i><u>carson.developer1125@gmail.com</u></i></span></p>
         </div>
-
+         <script src="scripts/healthcheck.js"></script>
         <footer>
             <p style="cursor: pointer;" onclick="goToCR()"><span id="cr"></span></p>
             <p style="cursor: pointer;" onclick="goToVE()">Version: <span id="version"></span></p>
