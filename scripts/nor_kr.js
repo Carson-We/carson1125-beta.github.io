@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
         }
 
         function goToCR() {
-            window.location.href = "CR_kr.html";
+            window.location.href = "li_kr.html";
         }
 
         function goToVE() {

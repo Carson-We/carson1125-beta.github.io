@@ -7,7 +7,7 @@ function goToHomePage() {
 }
 
 function goToCR() {
-    window.location.href = "CR.html";
+    window.location.href = "li.html";
 }
 
 function goToVE() {
