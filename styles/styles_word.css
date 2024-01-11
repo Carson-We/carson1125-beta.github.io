@@ -75,6 +75,10 @@ h1 {
     padding-left: 10px;
 }
 
+h2 {
+  margin-left: 10px;
+}
+
 p {
     margin-left: 10px;
 }
@@ -343,4 +347,11 @@ file-list {
 .dropdown1:hover .dropdown-btn1 {
   background-color:white;
   color: black;
+}
+
+.dashed-line::before {
+  content: "";
+  display: block;
+  border-bottom: 1px dashed #858282;
+  margin-bottom: 10px;
 }
