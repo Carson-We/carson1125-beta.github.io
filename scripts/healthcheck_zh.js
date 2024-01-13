@@ -13,9 +13,9 @@
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    updateWebsiteStatus("正常", "#32CD32");
+                    updateWebsiteStatus("√ 正常", "#green");
                 } else {
-                    updateWebsiteStatus("離線", "#FF0000");
+                    updateWebsiteStatus("× 離線", "#red");
                 }
             }
         };
@@ -25,7 +25,7 @@
     function updateWebsiteStatus(urlObj, status, color) {
         var statusElement = document.getElementById(urlObj.label);
         if (statusElement) {
-            statusElement.textContent = "Server: " + status;
+            statusElement.textContent = status;
             statusElement.style.color = color;
         }
     }

@@ -13,9 +13,9 @@ var websiteUrls = [
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    updateWebsiteStatus("정상", "#32CD32");
+                    updateWebsiteStatus("√ 정상", "#green");
                 } else {
-                    updateWebsiteStatus("오프라인", "#FF0000");
+                    updateWebsiteStatus("× 오프라인", "#red");
                 }
             }
         };

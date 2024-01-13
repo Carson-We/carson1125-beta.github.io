@@ -13,10 +13,12 @@ function checkWebsiteStatus(url) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                updateWebsiteStatus(url, "Normal", "#32CD32");
+                updateWebsiteStatus(url, "√ Normal", "green");
             } else {
-                updateWebsiteStatus(url, "Offline", "#FF0000");
+                updateWebsiteStatus(url, "× Offline", "red");
             }
+        } else {
+            updateWebsiteStatus(url, "⌛ Loading", "orange");
         }
     };
     xhr.send();
