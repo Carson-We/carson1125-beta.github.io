@@ -393,3 +393,10 @@ ul.tree li:last-child:before {
   background-color:white;
   color: black;
 }
+
+.solid-line::before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #858282;
+    margin-bottom: 10px;
+  }
