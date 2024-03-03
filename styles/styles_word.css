@@ -190,7 +190,7 @@ footer {
     transform: translateY(-5px);
 }
 
-file-list {
+.file-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
