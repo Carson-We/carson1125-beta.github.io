@@ -16,4 +16,5 @@ Here is the schedule for Carson1125.hk:
 - **February 1st: Grand Opening**
   On February 1st, Carson1125.hk will have its grand opening. This website will serve as the main platform for users to access the latest information and updates about Carson Wu.
 
+On March 3rd, [Carson1125.hk](https://carson1125.vercel.app)  done its grand opening.
 Carson Wu looks forward to sharing his story and accomplishments with users, and providing valuable content and resources. Users can visit [Carson1125.hk](http://carson1125.hk) for more information and participate in the scheduled events.
